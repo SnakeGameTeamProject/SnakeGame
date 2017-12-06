@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33795899083863408}
   - component: {fileID: 135259207754586228}
   - component: {fileID: 23973486597783874}
+  - component: {fileID: 114894289578857370}
   m_Layer: 0
   m_Name: SnakeMain
   m_TagString: Untagged
@@ -83,6 +84,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1026486815198976}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114894289578857370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1026486815198976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1928d3fce736214890c46fddd4604f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tailSections: []
+  speed: 5
+  speedRotation: 250
+  displacement: -0.5
 --- !u!135 &135259207754586228
 SphereCollider:
   m_ObjectHideFlags: 1
