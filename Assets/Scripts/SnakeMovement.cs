@@ -5,15 +5,16 @@ using UnityEngine;
 public class SnakeMovement : MonoBehaviour {
 
 
-    public GameObject[] tailSections = new GameObject[0];
+    public List<GameObject> tailSections = new List<GameObject>();
 
     public float speed;
     public float speedRotation;
-    public float displacement = -0.5f;
+    public float displacement = 0.5f;
+    public GameObject TailObject;
   
     // Use this for initialization
     void Start () {
-		
+        tailSections.Add(gameObject);	
 	}
 	
 	// Update is called once per frame
@@ -29,5 +30,13 @@ public class SnakeMovement : MonoBehaviour {
         {
             transform.Rotate(Vector3.down * speedRotation * Time.deltaTime);
         }
+    }
+
+   public void AddTail()
+    {
+       
+        Vector3 newTailPos = tailSections[tailSections.Count-1].transform.position;
+        newTailPos.z -= displacement;
+        tailSections.Add(GameObject.Instantiate(TailObject, newTailPos, Quaternion.identity) as GameObject);
     }
 }

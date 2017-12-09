@@ -13,14 +13,28 @@ public class FoodGeneration : MonoBehaviour {
     public GameObject foodAdd;
 
     public Vector3 position;
-    void FoodPosition()
-    {
-        position = new Vector3(Random.Range(X * -1, X), 1, Random.Range(Z * -1, Z));
-    }
-    // Use this for initialization
-    void Start () {
+
+
+  
+    void AddNewFood () {
         FoodPosition();
-        foodAdd = Instantiate(foodObject, position, Quaternion.identity) as GameObject;
+        foodAdd = GameObject.Instantiate(foodObject, position, Quaternion.identity) as GameObject;
     }
-	
+	void FoodPosition()
+    {
+       position = new Vector3(Random.Range(X * -1, X), 1f, Random.Range(Z * -1, Z));
+    }
+    
+    void Update()
+    {
+        if(!foodAdd)
+        {
+            AddNewFood();
+        }
+        else
+        {
+            return;
+        }
+    }
+   
 }
