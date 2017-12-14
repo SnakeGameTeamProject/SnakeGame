@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tailSections: []
-  speed: 5
-  speedRotation: 250
+  speed: 8
+  speedRotation: 300
   displacement: -0.5
   TailObject: {fileID: 0}
   Score: {fileID: 0}

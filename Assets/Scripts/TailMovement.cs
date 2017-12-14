@@ -31,7 +31,7 @@ public class TailMovement : MonoBehaviour
     {
         if(other.CompareTag("SnakeMain"))
         {
-            if(id>2)
+            if(id>3)
             {
                 Application.LoadLevel(Application.loadedLevel);
             }
