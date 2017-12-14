@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1026486815198976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,6 +99,9 @@ MonoBehaviour:
   speed: 5
   speedRotation: 250
   displacement: -0.5
+  TailObject: {fileID: 0}
+  Score: {fileID: 0}
+  score: 0
 --- !u!135 &135259207754586228
 SphereCollider:
   m_ObjectHideFlags: 1

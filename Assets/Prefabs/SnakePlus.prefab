@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1100356998729680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -0.5}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   tailPrevious: {x: 0, y: 0, z: 0}
   tailPreviousSec: {fileID: 0}
   mainSnake: {fileID: 0}
+  id: 0
 --- !u!135 &135775783106657714
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -106,7 +107,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1100356998729680}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
