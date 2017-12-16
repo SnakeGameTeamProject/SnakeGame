@@ -33,7 +33,7 @@ public class TailMovement : MonoBehaviour
         {
             if(id>3)
             {
-                Application.LoadLevel(Application.loadedLevel);
+                Application.LoadLevel(0);
             }
         }
     }
