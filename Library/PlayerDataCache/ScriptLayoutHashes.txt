@@ -139,3 +139,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 e72ed3f0e222138c38532858a3714a8d Assembly-CSharp.dll:.SnakeMovement
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GameOver
